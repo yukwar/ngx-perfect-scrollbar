@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { PerfectScrollbarModule, PerfectScrollbarConfigInterface,
   PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 
@@ -22,7 +20,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
     PerfectScrollbarModule
   ],
   exports: [

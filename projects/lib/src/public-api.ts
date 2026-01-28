@@ -1,5 +1,6 @@
 export { PerfectScrollbarComponent } from './lib/perfect-scrollbar.component';
 export { PerfectScrollbarDirective } from './lib/perfect-scrollbar.directive';
+export { ForceNativeScrollDirective } from './lib/perfect-scrollbar-force-native-scroll.directive';
 
 export {
   Geometry,

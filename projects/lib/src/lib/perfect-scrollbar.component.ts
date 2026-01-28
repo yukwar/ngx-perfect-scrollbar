@@ -15,6 +15,7 @@ import { PerfectScrollbarEvent, PerfectScrollbarEvents,
 @Component({
   selector: 'perfect-scrollbar',
   exportAs: 'ngxPerfectScrollbar',
+  standalone: false,
   templateUrl: './perfect-scrollbar.component.html',
   styleUrls: [
     './perfect-scrollbar.component.css',
@@ -114,7 +115,7 @@ export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
                 this.allowPropagationY = false;
               }
             }
-          } else {
+          } else {
             if (state === 'left' || state === 'right') {
               this.states.left = false;
               this.states.right = false;
@@ -253,7 +254,7 @@ export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
     }
   }
 
-  private checkPropagation(event: any, deltaX: number, deltaY: number): void {
+  private checkPropagation(event: any, deltaX: number, deltaY: number): void {
     this.interaction = true;
 
     const scrollDirectionX = (deltaX < 0) ? -1 : 1;
@@ -282,3 +283,4 @@ export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
     this.cdRef.detectChanges();
   }
 }
+
